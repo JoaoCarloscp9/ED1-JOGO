@@ -1,0 +1,5 @@
+# Ignorar a pasta de outputs do C
+output/
+
+# Ignorar todos os arquivos executáveis compilados
+*.exe
