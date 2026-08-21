@@ -23,7 +23,7 @@ int main(){
      ppontuacao = &pontuacao;
 
     printf("INICIO DA JOGADA\n");
-    printf("VIDA INICIAL : %d\n ENDERECO : %p \n", *pvida, pvida);
+    printf("VIDA INICIAL : %d\n ENDERECO : %p \n", *pvida, (void*)pvida);
     printf("PONTUACAO : %d\n ENDERECO : %p \n", *ppontuacao, ppontuacao);
 
     printf("\n\n");
@@ -31,7 +31,7 @@ int main(){
     printf("DANO LEVADO\n");
     printf("QUAL O DANO LEVADO?");
     scanf("%d", &daano);
-    dano(pvida, daano); 
+    dano(pvida, daano);
     printf("VIDA APOS DANO LEVADO: %d\n", vida);
 
     printf("\n\n");
